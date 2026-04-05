@@ -308,8 +308,8 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
         if (player != null && player.state.playing) {
           _pauseDueToPauseUponEnteringBackgroundMode = true;
           player.pause();
-          videoPlayerServiceHandler?.stopServiceIfNeeded();
         }
+        videoPlayerServiceHandler?.stopServiceIfNeeded();
       } else {
         if (_pauseDueToPauseUponEnteringBackgroundMode) {
           _pauseDueToPauseUponEnteringBackgroundMode = false;

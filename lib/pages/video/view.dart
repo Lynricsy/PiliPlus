@@ -406,6 +406,7 @@ class _VideoDetailPageVState extends State<VideoDetailPageV>
         ..removeStatusLister(playerListener)
         ..removePositionListener(positionListener)
         ..pause();
+      videoPlayerServiceHandler?.stopServiceIfNeeded();
     }
   }
 
